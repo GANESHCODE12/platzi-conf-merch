@@ -1,5 +1,6 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
+require('dotenv').config()
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -73,7 +74,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        CLIENT_ID_PP: JSON.stringify(process.env.CLIENT_ID_PP),
+        CLIENT_ID_PP: process.env.CLIENT_ID_PP,
       },
     }),
   ],
