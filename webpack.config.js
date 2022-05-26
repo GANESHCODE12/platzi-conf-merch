@@ -73,7 +73,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        CLIENT_ID_PP: process.env.CLIENT_ID_PP,
+        CLIENT_ID_PP: JSON.stringify(process.env.CLIENT_ID_PP),
       },
     }),
   ],
