@@ -66,7 +66,7 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
     new Dotenv({
-      path: '.env',
+      path: './.env',
       safe: true,
       systemvars: true,
       defaults: false,
