@@ -12,6 +12,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env: 
+          CLIENT_ID_PP: ${{ secrets.CLIENT_ID_PP }}
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
