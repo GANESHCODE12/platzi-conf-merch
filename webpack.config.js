@@ -1,6 +1,6 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
-const { webpack } = require('webpack');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
